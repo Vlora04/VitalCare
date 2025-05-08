@@ -60,241 +60,228 @@ export const assets = {
 
 export const specialityData = [
     {
-        speciality: 'General physician',
+        speciality: 'Mjek i përgjithshëm',
         image: General_physician
     },
     {
-        speciality: 'Gynecologist',
+        speciality: 'Gjinekolog',
         image: Gynecologist
     },
     {
-        speciality: 'Dermatologist',
+        speciality: 'Dermatolog',
         image: Dermatologist
     },
     {
-        speciality: 'Pediatricians',
+        speciality: 'Pediatër',
         image: Pediatricians
     },
     {
-        speciality: 'Neurologist',
+        speciality: 'Neurolog',
         image: Neurologist
     },
     {
-        speciality: 'Gastroenterologist',
+        speciality: 'Gastroenterolog',
         image: Gastroenterologist
     },
 ]
 
+
 export const doctors = [
     {
         _id: 'doc1',
-        name: 'Dr. Richard James',
+        name: 'Dr. Arben Krasniqi',
         image: doc1,
-        speciality: 'General physician',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        speciality: 'Mjek i përgjithshëm',
+        degree: 'Mjekësi e Përgjithshme',
+        experience: '4 vite',
+        about: 'Dr. Arben ka përkushtim të madh ndaj kujdesit të përgjithshëm shëndetësor dhe parandalimit të sëmundjeve.',
+        fees: 25,
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Iliria, Nr. 12',
+            line2: 'Prishtinë, Kosovë'
         }
     },
     {
         _id: 'doc2',
-        name: 'Dr. Emily Larson',
+        name: 'Dr. Elira Berisha',
         image: doc2,
-        speciality: 'Gynecologist',
-        degree: 'MBBS',
-        experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        speciality: 'Gjinekolog',
+        degree: 'Gjinekologji',
+        experience: '6 vite',
+        about: 'E specializuar në kujdesin për gratë dhe lindjen, Dr. Elira është një zgjedhje e sigurt për çdo paciente.',
+        fees: 30,
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Lagjja Dardania, Blloku A',
+            line2: 'Ferizaj, Kosovë'
         }
     },
     {
         _id: 'doc3',
-        name: 'Dr. Sarah Patel',
+        name: 'Dr. Florim Gashi',
         image: doc3,
-        speciality: 'Dermatologist',
-        degree: 'MBBS',
-        experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        speciality: 'Dermatolog',
+        degree: 'Dermatologji',
+        experience: '3 vite',
+        about: 'Dr. Nora është eksperte në trajtimin e lëkurës dhe sëmundjeve dermatologjike.',
+        fees: 20,
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Adem Jashari, Nr. 8',
+            line2: 'Gjakovë, Kosovë'
         }
     },
     {
         _id: 'doc4',
-        name: 'Dr. Christopher Lee',
+        name: 'Dr. Ilir Beqiri',
         image: doc4,
-        speciality: 'Pediatricians',
-        degree: 'MBBS',
-        experience: '2 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 40,
+        speciality: 'Pediatër',
+        degree: 'Pediatri',
+        experience: '5 vite',
+        about: 'Dr. Ilir kujdeset me përkushtim për shëndetin e fëmijëve.',
+        fees: 25,
         address: {
-            line1: '47th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Nënë Tereza',
+            line2: 'Suharekë, Kosovë'
         }
     },
     {
         _id: 'doc5',
-        name: 'Dr. Jennifer Garcia',
+        name: 'Dr. Teuta Kelmendi',
         image: doc5,
-        speciality: 'Neurologist',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        speciality: 'Neurolog',
+        degree: 'Neurologji',
+        experience: '7 vite',
+        about: 'Eksperte në trajtimin e sëmundjeve të trurit dhe sistemit nervor.',
+        fees: 35,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Zahir Pajaziti, Nr. 15',
+            line2: 'Mitrovicë, Kosovë'
         }
     },
     {
         _id: 'doc6',
-        name: 'Dr. Andrew Williams',
+        name: 'Dr. Besart Mehmeti',
         image: doc6,
-        speciality: 'Neurologist',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        speciality: 'Gastroenterolog',
+        degree: 'Gastroenterologji',
+        experience: '4 vite',
+        about: 'Specialist në trajtimin e problemeve me stomakun dhe sistemin tretës.',
+        fees: 30,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Luan Haradinaj',
+            line2: 'Pejë, Kosovë'
         }
     },
     {
         _id: 'doc7',
-        name: 'Dr. Christopher Davis',
+        name: 'Dr. Blerim Shala',
         image: doc7,
-        speciality: 'General physician',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        speciality: 'Kardiolog',
+        degree: 'Kardiologji',
+        experience: '8 vite',
+        about: 'Dr. Blerim është specialist në trajtimin e sëmundjeve të zemrës.',
+        fees: 40,
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Dëshmorët e Kombit, Nr. 22',
+            line2: 'Prishtinë, Kosovë'
         }
     },
     {
         _id: 'doc8',
-        name: 'Dr. Timothy White',
+        name: 'Dr. Valon Dervishi',
         image: doc8,
-        speciality: 'Gynecologist',
-        degree: 'MBBS',
-        experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        speciality: 'Oftalmolog',
+        degree: 'Oftalmologji',
+        experience: '5 vite',
+        about: 'Dr. Ardiana është eksperte në trajtimin e problemeve me sytë dhe shikimin.',
+        fees: 30,
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Bajram Curri, Nr. 10',
+            line2: 'Shkup, Maqedoni'
         }
     },
     {
         _id: 'doc9',
-        name: 'Dr. Ava Mitchell',
+        name: 'Dr. Ardiana Xhemaili',
         image: doc9,
-        speciality: 'Dermatologist',
-        degree: 'MBBS',
-        experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
+        speciality: 'Psikiatër',
+        degree: 'Psikiatri',
+        experience: '6 vite',
+        about: 'Dr. Florim ofron kujdes të specializuar për shëndetin mendor.',
+        fees: 40,
         address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Luan Haradinaj, Nr. 5',
+            line2: 'Pejë, Kosovë'
         }
     },
     {
         _id: 'doc10',
-        name: 'Dr. Jeffrey King',
+        name: 'Dr. Valmir Mustafa',
         image: doc10,
-        speciality: 'Pediatricians',
-        degree: 'MBBS',
-        experience: '2 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 40,
+        speciality: 'Dentist',
+        degree: 'Dentisti',
+        experience: '7 vite',
+        about: 'Dr. Mimoza ofron trajtime dentare dhe kujdes oral.',
+        fees: 30,
         address: {
-            line1: '47th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Bajram Curri, Nr. 16',
+            line2: 'Prizren, Kosovë'
         }
     },
     {
         _id: 'doc11',
-        name: 'Dr. Zoe Kelly',
+        name: 'Dr. Mimoza Osmani',
         image: doc11,
-        speciality: 'Gastroenterologist',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        speciality: 'Ortoped',
+        degree: 'Ortopedi',
+        experience: '10 vite',
+        about: 'Dr. Valon është ekspert në trajtimin e lëndimeve të kockave dhe muskujve.',
         fees: 50,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Hasan Prishtina, Nr. 8',
+            line2: 'Gjakovë, Kosovë'
         }
     },
     {
         _id: 'doc12',
-        name: 'Dr. Patrick Harris',
+        name: 'Dr. Shkëlzen Koliqi',
         image: doc12,
-        speciality: 'Neurologist',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        speciality: 'Fizioterapist',
+        degree: 'Fizioterapi',
+        experience: '4 vite',
+        about: 'Dr. Linda ofron terapi për rehabilitimin e lëndimeve muskulore.',
+        fees: 25,
         address: {
-            line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. UÇK, Nr. 13',
+            line2: 'Mitrovicë, Kosovë'
         }
     },
     {
         _id: 'doc13',
-        name: 'Dr. Chloe Evans',
+        name: 'Dr. Eva Dajti',
         image: doc13,
-        speciality: 'General physician',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
+        speciality: 'Endokrinolog',
+        degree: 'Endokrinologji',
+        experience: '9 vite',
+        about: 'Dr. Shkëlzeni është ekspert në trajtimin e sëmundjeve të gjëndrës tiroide dhe diabetit.',
+        fees: 40,
         address: {
-            line1: '17th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Luan Haradinaj, Nr. 23',
+            line2: 'Pejë, Kosovë'
         }
     },
     {
         _id: 'doc14',
-        name: 'Dr. Ryan Martinez',
+        name: 'Dr. Driton Hoxha',
         image: doc14,
-        speciality: 'Gynecologist',
-        degree: 'MBBS',
-        experience: '3 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 60,
+        speciality: 'Mjek i përgjithshëm',
+        degree: 'Mjekësi e Përgjithshme',
+        experience: '5 vite',
+        about: 'Dr. Eva ofron shërbime për kujdesin shëndetësor të përgjithshëm.',
+        fees: 20,
         address: {
-            line1: '27th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
+            line1: 'Rr. Muharrem Fejza, Nr. 19',
+            line2: 'Ferizaj, Kosovë'
         }
-    },
-    {
-        _id: 'doc15',
-        name: 'Dr. Amelia Hill',
-        image: doc15,
-        speciality: 'Dermatologist',
-        degree: 'MBBS',
-        experience: '1 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 30,
-        address: {
-            line1: '37th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
-        }
-    },
-   
+    }
 ]
+

@@ -10,32 +10,66 @@ const navigate = useNavigate()
 
 const {doctors} = useContext(AppContext)
   
-
 const applyFilter = () => {
   if (speciality) {
-    setFilterDoc(doctors.filter(doc => doc.speciality === speciality))
+    const filtered = doctors.filter(doc => doc.speciality.toLowerCase() === speciality.toLowerCase());
+    setFilterDoc(filtered);
   } else {
-    setFilterDoc(doctors)
+    setFilterDoc(doctors);
   }
-}
+};
+
 
 useEffect(() => {
-   applyFilter()
-},[doctors,speciality])
+  if (doctors && doctors.length > 0) {
+    applyFilter();
+  }
+}, [doctors, speciality]);
+
 
 return (
   
   <div>
-      <p className='text-gray-600'>Browse through the doctors specialist.</p>
+      <p className='text-gray-600'>Shfleto mjekët specialistë.</p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
         <div className='flex flex-col gap-4 text-sm text-gray-600'>
-        <p onClick={() => navigate('/doctors/General physician')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "General physician" ? "bg-indigo-100 text-black" : ""} `}>General physician</p>
-        <p onClick={() => navigate('/doctors/Gynecologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer  ${speciality === "Gynecologist" ? "bg-indigo-100 text-black" : ""}  `}>Gynecologist</p>
-        <p onClick={() => navigate('/doctors/Dermatologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer  ${speciality === "Dermatologist" ? "bg-indigo-100 text-black" : ""}  `}>Dermatologist</p>
-        <p onClick={() => navigate('/doctors/Pediatricians')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer  ${speciality === "Pediatricians" ? "bg-indigo-100 text-black" : ""}  `}>Pediatricians</p>
-        <p onClick={() => navigate('/doctors/Neurologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer  ${speciality === "Neurologist" ? "bg-indigo-100 text-black" : ""}  `}>Neurologist</p>
-        <p onClick={() => navigate('/doctors/Gastroenterologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer  ${speciality === "Gastroenterologist" ? "bg-indigo-100 text-black" : ""}  `}>Gastroenterologist</p>
-        </div>
+        <p
+  onClick={() => navigate('/doctors/Mjek i përgjithshëm')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Mjek i përgjithshëm" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Mjek i përgjithshëm
+</p>
+<p
+  onClick={() => navigate('/doctors/Gjinekolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Gjinekolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Gjinekolog
+</p>
+<p
+  onClick={() => navigate('/doctors/Dermatolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Dermatolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Dermatolog
+</p>
+<p
+  onClick={() => navigate('/doctors/Pediatër')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Pediatër" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Pediatër
+</p>
+<p
+  onClick={() => navigate('/doctors/Neurolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Neurolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Neurolog
+</p>
+<p
+  onClick={() => navigate('/doctors/Gastroenterolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Gastroenterolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Gastroenterolog
+</p>
+/</div>
         <div className='w-full grid grid-cols-auto gap-4 gap-y-6'>
            {
             filterDoc.map((item,index)=>(

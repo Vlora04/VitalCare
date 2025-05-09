@@ -6,6 +6,8 @@ const Doctors = () => {
 
 const { speciality } = useParams ()
 const [filterDoc,setFilterDoc] = useState([])
+const [showFilter,setShowFilter] = useState(false)
+
 const navigate = useNavigate()
 
 const {doctors} = useContext(AppContext)
@@ -32,7 +34,8 @@ return (
   <div>
       <p className='text-gray-600'>Shfleto mjekët specialistë.</p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
-        <div className='flex flex-col gap-4 text-sm text-gray-600'>
+        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`}   onClick={()=>setShowFilter(prev => !prev)}>Filtro</button>
+        <div className={`flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
         <p
   onClick={() => navigate('/doctors/Mjek i përgjithshëm')}
   className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Mjek i përgjithshëm" ? "bg-indigo-100 text-black" : ""}`}

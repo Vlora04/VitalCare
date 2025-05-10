@@ -26,16 +26,46 @@ const Doctors = () => {
 
   return (
     <div>
-      <p className='text-gray-600'>Kërko mjek dhe specialistë. </p>
+      <p className='text-gray-600'>Browse through the doctors specialist. </p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
-        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`} onClick={() => setShowFilter(prev => !prev)}>Filtrat</button>
+        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`} onClick={() => setShowFilter(prev => !prev)}>Filters</button>
         <div className={`flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
-          <p onClick={() => speciality === 'General physician' ? navigate('/doctors') : navigate('/doctors/General physician')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === 'General physician' ? 'bg-indigo-100 text-black' : ''}`}>Mjek i përgjithshëm</p>
-          <p onClick={() => speciality === 'Gynaecologist' ? navigate('/doctors') : navigate('/doctors/Gynaecologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === 'Gynecologist' ? 'bg-indigo-100 text-black' : ''}`}>Gjinekolog</p>
-          <p onClick={() => speciality === 'Dermatologist' ? navigate('/doctors') : navigate('/doctors/Dermatologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === 'Dermatologist' ? 'bg-indigo-100 text-black' : ''}`}>Dermatolog</p>
-          <p onClick={() => speciality === 'Pediatricians' ? navigate('/doctors') : navigate('/doctors/Pediatricians')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === 'Pediatricians' ? 'bg-indigo-100 text-black' : ''}`}>Pediatër</p>
-          <p onClick={() => speciality === 'Neurologist' ? navigate('/doctors') : navigate('/doctors/Neurologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === 'Neurologist' ? 'bg-indigo-100 text-black' : ''}`}>Neurolog</p>
-          <p onClick={() => speciality === 'Gastroenterologist' ? navigate('/doctors') : navigate('/doctors/Gastroenterologist')} className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === 'Gastroenterologist' ? 'bg-indigo-100 text-black' : ''}`}>Gastroenterolog</p>
+        <p
+  onClick={() => navigate('/doctors/Mjek i përgjithshëm')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Mjek i përgjithshëm" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Mjek i përgjithshëm
+</p>
+<p
+  onClick={() => navigate('/doctors/Gjinekolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Gjinekolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Gjinekolog
+</p>
+<p
+  onClick={() => navigate('/doctors/Dermatolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Dermatolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Dermatolog
+</p>
+<p
+  onClick={() => navigate('/doctors/Pediatër')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Pediatër" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Pediatër
+</p>
+<p
+  onClick={() => navigate('/doctors/Neurolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Neurolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Neurolog
+</p>
+<p
+  onClick={() => navigate('/doctors/Gastroenterolog')}
+  className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${speciality === "Gastroenterolog" ? "bg-indigo-100 text-black" : ""}`}
+>
+  Gastroenterolog
+</p>
         </div>
         <div className='w-full grid grid-cols-auto gap-4 gap-y-6'>
           {

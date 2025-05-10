@@ -122,7 +122,7 @@ export const doctors = [
         speciality: 'Dermatolog',
         degree: 'Dermatologji',
         experience: '3 vite',
-        about: 'Dr. Nora është eksperte në trajtimin e lëkurës dhe sëmundjeve dermatologjike.',
+        about: 'Dr. Florim është ekspert në trajtimin e lëkurës dhe sëmundjeve dermatologjike.',
         fees: 20,
         address: {
             line1: 'Rr. Adem Jashari, Nr. 8',
@@ -192,7 +192,7 @@ export const doctors = [
         speciality: 'Oftalmolog',
         degree: 'Oftalmologji',
         experience: '5 vite',
-        about: 'Dr. Ardiana është eksperte në trajtimin e problemeve me sytë dhe shikimin.',
+        about: 'Dr. Valon është ekspert në trajtimin e problemeve me sytë dhe shikimin.',
         fees: 30,
         address: {
             line1: 'Rr. Bajram Curri, Nr. 10',
@@ -206,7 +206,7 @@ export const doctors = [
         speciality: 'Psikiatër',
         degree: 'Psikiatri',
         experience: '6 vite',
-        about: 'Dr. Florim ofron kujdes të specializuar për shëndetin mendor.',
+        about: 'Dr. Ardiana ofron kujdes të specializuar për shëndetin mendor.',
         fees: 40,
         address: {
             line1: 'Rr. Luan Haradinaj, Nr. 5',
@@ -220,7 +220,7 @@ export const doctors = [
         speciality: 'Dentist',
         degree: 'Dentisti',
         experience: '7 vite',
-        about: 'Dr. Mimoza ofron trajtime dentare dhe kujdes oral.',
+        about: 'Dr. Valmir ofron trajtime dentare dhe kujdes oral.',
         fees: 30,
         address: {
             line1: 'Rr. Bajram Curri, Nr. 16',
@@ -234,7 +234,7 @@ export const doctors = [
         speciality: 'Ortoped',
         degree: 'Ortopedi',
         experience: '10 vite',
-        about: 'Dr. Valon është ekspert në trajtimin e lëndimeve të kockave dhe muskujve.',
+        about: 'Dr. Mimoza është eksperte në trajtimin e lëndimeve të kockave dhe muskujve.',
         fees: 50,
         address: {
             line1: 'Rr. Hasan Prishtina, Nr. 8',
@@ -248,7 +248,7 @@ export const doctors = [
         speciality: 'Fizioterapist',
         degree: 'Fizioterapi',
         experience: '4 vite',
-        about: 'Dr. Linda ofron terapi për rehabilitimin e lëndimeve muskulore.',
+        about: 'Dr. Shkëlzen ofron terapi për rehabilitimin e lëndimeve muskulore.',
         fees: 25,
         address: {
             line1: 'Rr. UÇK, Nr. 13',
@@ -262,7 +262,7 @@ export const doctors = [
         speciality: 'Endokrinolog',
         degree: 'Endokrinologji',
         experience: '9 vite',
-        about: 'Dr. Shkëlzeni është ekspert në trajtimin e sëmundjeve të gjëndrës tiroide dhe diabetit.',
+        about: 'Dr. Eva është eksperte në trajtimin e sëmundjeve të gjëndrës tiroide dhe diabetit.',
         fees: 40,
         address: {
             line1: 'Rr. Luan Haradinaj, Nr. 23',
@@ -276,7 +276,7 @@ export const doctors = [
         speciality: 'Mjek i përgjithshëm',
         degree: 'Mjekësi e Përgjithshme',
         experience: '5 vite',
-        about: 'Dr. Eva ofron shërbime për kujdesin shëndetësor të përgjithshëm.',
+        about: 'Dr. Dritoni ofron shërbime për kujdesin shëndetësor të përgjithshëm.',
         fees: 20,
         address: {
             line1: 'Rr. Muharrem Fejza, Nr. 19',
